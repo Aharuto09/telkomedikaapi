@@ -35,4 +35,8 @@ public class TodosController {
         todoRepository.deleteById(id);
         return "redirect:/";
     }
+    @GetMapping("/test")
+    public String testing(){
+        return "Test Hello World";
+    }
 }
